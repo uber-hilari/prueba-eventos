@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AWSSDK.DynamoDBv2" Version="4.0.17.3" />
+    <PackageReference Include="AWSSDK.Extensions.NETCore.Setup" Version="4.0.3.28" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="10.0.5" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\HS.Eventos.Dominio\HS.Eventos.Dominio.csproj" />
+    <ProjectReference Include="..\HS.Eventos.Models\HS.Eventos.Models.csproj" />
+  </ItemGroup>
+
+</Project>

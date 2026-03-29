@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "HS.Eventos.Jobs": {
+      "commandName": "Project"
+    },
+    "Container (Dockerfile)": {
+      "commandName": "Docker"
+    }
+  }
+}

@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>3c167544-6005-4bbc-ad62-6b466b358b1c</UserSecretsId>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AWSSDK.Extensions.NETCore.Setup" Version="4.0.3.28" />
+    <PackageReference Include="AWSSDK.SQS" Version="4.0.2.20" />
+    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="10.0.4" />
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.23.0" />
+    <PackageReference Include="Microsoft.Extensions.Caching.StackExchangeRedis" Version="7.0.0" />
+    <PackageReference Include="System.Drawing.Common" Version="10.0.5" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\HS.Eventos.Aplicacion\HS.Eventos.Aplicacion.csproj" />
+    <ProjectReference Include="..\HS.Eventos.DataAccess.Dynamo\HS.Eventos.DataAccess.Dynamo.csproj" />
+    <ProjectReference Include="..\HS.Eventos.Dominio\HS.Eventos.Dominio.csproj" />
+    <ProjectReference Include="..\HS.Eventos.Messaging.SQS\HS.Eventos.Messaging.SQS.csproj" />
+    <ProjectReference Include="..\HS.Mediator\HS.Mediator.csproj" />
+  </ItemGroup>
+
+</Project>

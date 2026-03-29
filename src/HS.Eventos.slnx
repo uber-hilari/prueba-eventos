@@ -1,0 +1,23 @@
+<Solution>
+  <Folder Name="/1 Presentacion/">
+    <Project Path="HS.Eventos.Jobs/HS.Eventos.Jobs.csproj" Id="f04cb63d-bae9-466f-8a69-26b035abb53a" />
+    <Project Path="HS.Eventos.WebApi/HS.Eventos.WebApi.csproj" Id="faf2ec70-d83a-49e5-a2bd-68b6ad583f53" />
+  </Folder>
+  <Folder Name="/2 Aplicacion/">
+    <Project Path="HS.Eventos.Aplicacion/HS.Eventos.Aplicacion.csproj" Id="4cdeb25b-57db-4636-9c40-929d89659252" />
+  </Folder>
+  <Folder Name="/3 Dominio/">
+    <Project Path="HS.Eventos.Dominio/HS.Eventos.Dominio.csproj" Id="4ab4622b-06bc-4179-ac8c-aac165dd0028" />
+  </Folder>
+  <Folder Name="/4 Infraestructura/">
+    <Project Path="HS.Eventos.DataAccess.Dynamo/HS.Eventos.DataAccess.Dynamo.csproj" Id="75a36d6c-3240-433e-87ac-5049ec277836" />
+    <Project Path="HS.Eventos.Messaging.SQS/HS.Eventos.Messaging.SQS.csproj" Id="28723773-cf63-4b93-a377-215fc7f35cab" />
+  </Folder>
+  <Folder Name="/5 Vertical/">
+    <Project Path="HS.Eventos.Models/HS.Eventos.Models.csproj" Id="9a2c9ea6-507f-49b8-be4e-b8be2e0378bc" />
+  </Folder>
+  <Folder Name="/9 Core/">
+    <Project Path="HS.Core/HS.Core.csproj" Id="03b8e369-3cea-4f50-afa1-9dec47ef6338" />
+    <Project Path="HS.Mediator/HS.Mediator.csproj" Id="aded594e-cbee-4bf9-a3fb-d0651165a990" />
+  </Folder>
+</Solution>
