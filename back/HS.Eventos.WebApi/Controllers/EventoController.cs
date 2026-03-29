@@ -11,7 +11,7 @@ using System.Text.Json;
 namespace HS.Eventos.WebApi.Controllers
 {
     [ApiController]
-    [Route("[controller]")]
+    [Route("api/[controller]")]
     public class EventoController(IMediator mediator, IDistributedCache cache, IConfiguration configuration) : ControllerBase
     {
         [HttpPost]

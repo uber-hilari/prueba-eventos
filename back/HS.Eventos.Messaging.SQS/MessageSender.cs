@@ -1,11 +1,13 @@
 ﻿using Amazon.SQS;
 using Amazon.SQS.Model;
 using HS.Eventos.Dominio.Services;
+using Microsoft.Extensions.Configuration;
 
 namespace HS.Eventos.Messaging.SQS
 {
     public class MessageSender (
-        IAmazonSQS client
+        IAmazonSQS client,
+        IConfiguration configuration
     ) : IMessageSender
     {
         const string QueueName = "PruebaEventosQueue";
@@ -26,12 +28,12 @@ namespace HS.Eventos.Messaging.SQS
         {
             try
             {
-                var response = await client.GetQueueUrlAsync(QueueName);
+                var response = await client.GetQueueUrlAsync(configuration["Colas:Eventos"] ?? QueueName);
                 return response.QueueUrl;
             }
             catch (QueueDoesNotExistException)
             {
-                var response = await client.CreateQueueAsync(QueueName);
+                var response = await client.CreateQueueAsync(configuration["Colas:Eventos"] ?? QueueName);
                 return response.QueueUrl;
             }
         }
